@@ -7,6 +7,10 @@ const nextConfig = {
   swcMinify: true,
 
   // Enable static export for GitHub Pages
+  /**
+   * @type {import('next').NextConfig}
+   */
+  const nextConfig = {
   output: "export",
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
@@ -20,6 +24,8 @@ const nextConfig = {
     loader: "custom",
     loaderFile: "./lib/image-loader.js",
   },
+
+    module.exports = nextConfig
 
   // Disable server-side features for static export
   experimental: {
